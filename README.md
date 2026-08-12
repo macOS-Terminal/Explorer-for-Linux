@@ -1,4 +1,4 @@
-# Explorer for Linux
+# Explorer for Linux(Written by DeepSeek)
 
 在 Linux 上深度复刻 Windows 11 资源管理器的极客项目，还原其经典的"未响应"体验。
 

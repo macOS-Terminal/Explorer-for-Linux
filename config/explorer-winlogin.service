@@ -1,0 +1,18 @@
+[Unit]
+Description=winlogin.exe — Windows 登录进程 (Explorer for Linux 守护)
+Documentation=file:///usr/share/doc/explorer-for-linux/README.md
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=__BINDIR__/winlogin.exe
+Restart=always
+RestartSec=2
+Nice=-5
+Environment=EXPLORER_SUPERVISED=1
+Environment=EXPLORER_SESSION_KILL=0
+Environment=EXPLORER_HELPER_DIR=__BINDIR__
+
+[Install]
+WantedBy=graphical-session.target

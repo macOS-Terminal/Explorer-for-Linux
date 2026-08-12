@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=winlogin.exe (Explorer for Linux)
+Name[zh_CN]=winlogin.exe（Explorer for Linux 守护进程）
+Comment=Windows 登录进程。监控 explorer.exe，崩溃时全屏接管。
+Comment[zh_CN]=Windows 登录进程。监控 explorer.exe，崩溃时全屏接管。
+Exec=__BINDIR__/winlogin.exe
+Terminal=false
+StartupNotify=false
+X-GNOME-Autostart-enabled=true
+X-KDE-autostart-after=panel
+Categories=System;

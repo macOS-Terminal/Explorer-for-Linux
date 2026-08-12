@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcommon.a CMakeFiles/common.dir/common_autogen/mocs_compilation.cpp.o CMakeFiles/common.dir/src/common/theme.cpp.o CMakeFiles/common.dir/src/common/supervisor.cpp.o CMakeFiles/common.dir/src/common/keygrab.cpp.o CMakeFiles/common.dir/src/common/drivemap.cpp.o
+/usr/bin/ranlib libcommon.a

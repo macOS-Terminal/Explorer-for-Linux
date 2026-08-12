@@ -1,0 +1,13 @@
+[Unit]
+Description=Explorer for Linux 启动阶段强绑定守卫（术语：桌面债主）
+After=explorer-winlogin.service
+Requires=explorer-winlogin.service
+
+[Service]
+Type=oneshot
+ExecStart=__BINDIR__/explorer-guard.sh
+RemainAfterExit=false
+Environment=EXPLORER_SESSION_KILL=0
+
+[Install]
+WantedBy=graphical-session.target

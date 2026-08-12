@@ -1,0 +1,14 @@
+# Explorer for Linux — Niri 配置片段
+# 安装器会复制为 ~/.config/explorer-linux/niri-dropin.kdl
+# 在 ~/.config/niri/config.kdl 末尾追加：
+#
+#     include ~/.config/explorer-linux/niri-dropin.kdl
+#
+# 会话终结受 EXPLORER_SESSION_KILL=1 门控。
+
+spawn-at-startup "winlogin.exe" args ["--niri"]
+
+# 逃生通道：Shift+F10
+bind-shortcut Mod+Shift+F10 {
+    spawn "explorer-killall" args ["--session"]
+}
